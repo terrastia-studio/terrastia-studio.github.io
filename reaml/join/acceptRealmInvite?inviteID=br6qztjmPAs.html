@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://minestia-studios.github.io/favicon.ico" />
+  <title>Redirection</title>
+</head>
+<body>
+  <script>
+    // Fonction de redirection
+    function redirectToMinestiaStudios() {
+      window.location.href = "https://minestia-studios.github.io/";
+    }
+
+    // Rediriger après une seconde (1000 ms)
+    setTimeout(redirectToMinestiaStudios, 3000);
+  </script>
+
+  <script>
+    // Fonction pour ouvrir le lien dans une autre fenêtre
+    function openMinecraftLink() {
+      const link = "minecraft://acceptRealmInvite?inviteID=br6qztjmPAs";
+      window.open(link, "_blank");
+    }
+
+    // Appeler la fonction pour ouvrir le lien après le chargement de la page
+    window.onload = openMinecraftLink;
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PWKKSL1G67"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PWKKSL1G67');
+</script>
+</body>
+</html>
